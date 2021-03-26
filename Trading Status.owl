@@ -1,0 +1,408 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hzbup/ontologies/2021/2/"
+     xml:base="http://www.semanticweb.org/hzbup/ontologies/2021/2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/governs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/governs">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Union"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Other"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/locatesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/locatesIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/presents -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/presents">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Trading_Status"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/hasContinuingRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/hasContinuingRate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Country"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Workforce_Size"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/hasPermanentlyCeasedRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/hasPermanentlyCeasedRate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Country"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Workforce_Size"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/hasTemporarilyClosedRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/hasTemporarilyClosedRate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Country"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Workforce_Size"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Country"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Other -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Other">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Trading_Status -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Trading_Status"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Union -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Union">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Workforce_Size -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Workforce_Size"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Accommodation_And_Food_Service_Activities -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Accommodation_And_Food_Service_Activities">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <hasPermanentlyCeasedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.012</hasPermanentlyCeasedRate>
+        <hasTemporarilyClosedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.182</hasTemporarilyClosedRate>
+        <hasTemporarilyClosedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.806</hasTemporarilyClosedRate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Administrative_And_Support_Service_Activities -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Administrative_And_Support_Service_Activities">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <hasContinuingRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.915</hasContinuingRate>
+        <hasPermanentlyCeasedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.000</hasPermanentlyCeasedRate>
+        <hasTemporarilyClosedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.081</hasTemporarilyClosedRate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Construction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Construction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <hasContinuingRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.732</hasContinuingRate>
+        <hasPermanentlyCeasedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.000</hasPermanentlyCeasedRate>
+        <hasTemporarilyClosedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.261</hasTemporarilyClosedRate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/ContinuingTrading -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/ContinuingTrading">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Trading_Status"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Education -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Education">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <hasContinuingRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.868</hasContinuingRate>
+        <hasPermanentlyCeasedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.000</hasPermanentlyCeasedRate>
+        <hasTemporarilyClosedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.126</hasTemporarilyClosedRate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/England -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/England">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Other"/>
+        <hasContinuingRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.778</hasContinuingRate>
+        <hasPermanentlyCeasedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.000</hasPermanentlyCeasedRate>
+        <hasTemporarilyClosedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.218</hasTemporarilyClosedRate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Human_Health_And_Social_Work_Activities -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Human_Health_And_Social_Work_Activities">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <hasContinuingRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.049</hasContinuingRate>
+        <hasPermanentlyCeasedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.014</hasPermanentlyCeasedRate>
+        <hasTemporarilyClosedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.938</hasTemporarilyClosedRate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Information_And_Communication -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Information_And_Communication">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <hasContinuingRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.950</hasContinuingRate>
+        <hasPermanentlyCeasedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.045</hasPermanentlyCeasedRate>
+        <hasTemporarilyClosedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.000</hasTemporarilyClosedRate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Manufacturing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Manufacturing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <hasContinuingRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.790</hasContinuingRate>
+        <hasPermanentlyCeasedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.000</hasPermanentlyCeasedRate>
+        <hasTemporarilyClosedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.206</hasTemporarilyClosedRate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Northern_Ireland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Northern_Ireland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Other"/>
+        <hasContinuingRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.728</hasContinuingRate>
+        <hasPermanentlyCeasedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.000</hasPermanentlyCeasedRate>
+        <hasTemporarilyClosedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.272</hasTemporarilyClosedRate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/PermanentlyCeased -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/PermanentlyCeased">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Trading_Status"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Scotland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Scotland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Other"/>
+        <hasContinuingRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.776</hasContinuingRate>
+        <hasPermanentlyCeasedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.000</hasPermanentlyCeasedRate>
+        <hasTemporarilyClosedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.217</hasTemporarilyClosedRate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/TemporarilyClosed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/TemporarilyClosed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Trading_Status"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Transportation_And_Storage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Transportation_And_Storage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <hasContinuingRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.000</hasContinuingRate>
+        <hasContinuingRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.915</hasContinuingRate>
+        <hasTemporarilyClosedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.085</hasTemporarilyClosedRate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/UK -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/UK">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Union"/>
+        <governs rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/England"/>
+        <governs rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Northern_Ireland"/>
+        <governs rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Scotland"/>
+        <governs rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Wales"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Wales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Wales">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Other"/>
+        <hasContinuingRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.762</hasContinuingRate>
+        <hasPermanentlyCeasedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.011</hasPermanentlyCeasedRate>
+        <hasTemporarilyClosedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.227</hasTemporarilyClosedRate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/all_companies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/all_companies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Workforce_Size"/>
+        <hasContinuingRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.767</hasContinuingRate>
+        <hasPermanentlyCeasedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.000</hasPermanentlyCeasedRate>
+        <hasTemporarilyClosedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.228</hasTemporarilyClosedRate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/250+_sized_company -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/250+_sized_company">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Workforce_Size"/>
+        <hasContinuingRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.798</hasContinuingRate>
+        <hasPermanentlyCeasedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.000</hasPermanentlyCeasedRate>
+        <hasTemporarilyClosedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.197</hasTemporarilyClosedRate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/250-_sized_company -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/250-_sized_company">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Workforce_Size"/>
+        <hasContinuingRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.748</hasContinuingRate>
+        <hasPermanentlyCeasedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.000</hasPermanentlyCeasedRate>
+        <hasTemporarilyClosedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.247</hasTemporarilyClosedRate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Arts,_Entertainment_And_Recreation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Arts,_Entertainment_And_Recreation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <hasContinuingRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.205</hasContinuingRate>
+        <hasPermanentlyCeasedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.000</hasPermanentlyCeasedRate>
+        <hasTemporarilyClosedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.795</hasTemporarilyClosedRate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Professional,_Scientific_And_Technical_Activities -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Professional,_Scientific_And_Technical_Activities">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <hasContinuingRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.967</hasContinuingRate>
+        <hasPermanentlyCeasedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.000</hasPermanentlyCeasedRate>
+        <hasTemporarilyClosedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.030</hasTemporarilyClosedRate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <hasContinuingRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.900</hasContinuingRate>
+        <hasPermanentlyCeasedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.000</hasPermanentlyCeasedRate>
+        <hasTemporarilyClosedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.100</hasTemporarilyClosedRate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <hasContinuingRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.752</hasContinuingRate>
+        <hasPermanentlyCeasedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.000</hasPermanentlyCeasedRate>
+        <hasTemporarilyClosedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.243</hasTemporarilyClosedRate>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
