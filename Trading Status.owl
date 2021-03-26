@@ -311,6 +311,9 @@
         <governs rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Northern_Ireland"/>
         <governs rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Scotland"/>
         <governs rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Wales"/>
+        <hasContinuingRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.767</hasContinuingRate>
+        <hasPermanentlyCeasedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.000</hasPermanentlyCeasedRate>
+        <hasTemporarilyClosedRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.228</hasTemporarilyClosedRate>
     </owl:NamedIndividual>
     
 
