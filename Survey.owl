@@ -1,0 +1,399 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hzbup/ontologies/2021/2/"
+     xml:base="http://www.semanticweb.org/hzbup/ontologies/2021/2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/receives -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/receives">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Government"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Survey"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/responses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/responses">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Workforce_Size"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Survey"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/sents -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/sents">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Government"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Survey"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/hasResponseRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/hasResponseRate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Workforce_Size"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/hasResponses -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/hasResponses">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Workforce_Size"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/hasSurveys -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/hasSurveys">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Workforce_Size"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Government -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Government"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Survey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Survey"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Workforce_Size -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Workforce_Size"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Accommodation_And_Food_Service_Activities -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Accommodation_And_Food_Service_Activities">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <responses rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/survey"/>
+        <hasResponseRate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.316</hasResponseRate>
+        <hasResponses rdf:datatype="http://www.w3.org/2001/XMLSchema#int">516</hasResponses>
+        <hasSurveys rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1634</hasSurveys>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Administrative_And_Support_Service_Activities -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Administrative_And_Support_Service_Activities">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <responses rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/survey"/>
+        <hasResponseRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.345</hasResponseRate>
+        <hasResponses rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">814</hasResponses>
+        <hasSurveys rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2359</hasSurveys>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Construction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Construction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <responses rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/survey"/>
+        <hasResponseRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.275</hasResponseRate>
+        <hasResponses rdf:datatype="http://www.w3.org/2001/XMLSchema#int">284</hasResponses>
+        <hasSurveys rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1034</hasSurveys>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Education -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Education">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <responses rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/survey"/>
+        <hasResponseRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.418</hasResponseRate>
+        <hasResponses rdf:datatype="http://www.w3.org/2001/XMLSchema#int">318</hasResponses>
+        <hasSurveys rdf:datatype="http://www.w3.org/2001/XMLSchema#int">760</hasSurveys>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/England -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/England"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Human_Health_And_Social_Work_Activities -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Human_Health_And_Social_Work_Activities">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <responses rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/survey"/>
+        <hasResponseRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">490</hasResponseRate>
+        <hasResponses rdf:datatype="http://www.w3.org/2001/XMLSchema#int">144</hasResponses>
+        <hasSurveys rdf:datatype="http://www.w3.org/2001/XMLSchema#int">294</hasSurveys>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Information_And_Communication -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Information_And_Communication">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <responses rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/survey"/>
+        <hasResponseRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.344</hasResponseRate>
+        <hasResponses rdf:datatype="http://www.w3.org/2001/XMLSchema#int">418</hasResponses>
+        <hasSurveys rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1216</hasSurveys>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Manufacturing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Manufacturing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <responses rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/survey"/>
+        <hasResponseRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.348</hasResponseRate>
+        <hasResponses rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1097</hasResponses>
+        <hasSurveys rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3155</hasSurveys>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Northern_Ireland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Northern_Ireland"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Scotland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Scotland"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Transportation_And_Storage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Transportation_And_Storage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <responses rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/survey"/>
+        <hasResponseRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.327</hasResponseRate>
+        <hasResponses rdf:datatype="http://www.w3.org/2001/XMLSchema#int">282</hasResponses>
+        <hasSurveys rdf:datatype="http://www.w3.org/2001/XMLSchema#int">863</hasSurveys>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/UK -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/UK"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/UKGov -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/UKGov">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Government"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Wales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Wales"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/all_companies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/all_companies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Workforce_Size"/>
+        <receives rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/survey"/>
+        <hasResponseRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.347</hasResponseRate>
+        <hasResponses rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6114</hasResponses>
+        <hasSurveys rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17623</hasSurveys>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/responsedSurvey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/responsedSurvey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Survey"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/sentSurvey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/sentSurvey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Survey"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/survey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/survey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Survey"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/0-99_sized_company -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/0-99_sized_company">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Workforce_Size"/>
+        <receives rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/survey"/>
+        <hasResponseRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.269</hasResponseRate>
+        <hasResponses rdf:datatype="http://www.w3.org/2001/XMLSchema#int">357</hasResponses>
+        <hasSurveys rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1326</hasSurveys>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/100-200_sized_company -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/100-200_sized_company">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Workforce_Size"/>
+        <receives rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/survey"/>
+        <hasResponseRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.379</hasResponseRate>
+        <hasResponses rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3452</hasResponses>
+        <hasSurveys rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9116</hasSurveys>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/250+_sized_company -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/250+_sized_company">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Workforce_Size"/>
+        <receives rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/survey"/>
+        <hasResponseRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.321</hasResponseRate>
+        <hasResponses rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2305</hasResponses>
+        <hasSurveys rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7181</hasSurveys>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Arts,_Entertainment_And_Recreation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Arts,_Entertainment_And_Recreation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <responses rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/survey"/>
+        <hasResponseRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.348</hasResponseRate>
+        <hasResponses rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1097</hasResponses>
+        <hasSurveys rdf:datatype="http://www.w3.org/2001/XMLSchema#int">28</hasSurveys>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Professional,_Scientific_And_Technical_Activities -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Professional,_Scientific_And_Technical_Activities">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <responses rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/survey"/>
+        <hasResponseRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.362</hasResponseRate>
+        <hasResponses rdf:datatype="http://www.w3.org/2001/XMLSchema#int">733</hasResponses>
+        <hasSurveys rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2023</hasSurveys>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Water_Supply,_Sewerage,_Waste_Management_And_Remediation_Activities">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <responses rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/survey"/>
+        <hasResponseRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.348</hasResponseRate>
+        <hasResponses rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70</hasResponses>
+        <hasSurveys rdf:datatype="http://www.w3.org/2001/XMLSchema#int">201</hasSurveys>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hzbup/ontologies/2021/2/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hzbup/ontologies/2021/2/Wholesale_And_Retail_Trade;_Repair_Of_Motor_Vehicles_And_Motorcycles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/Industry"/>
+        <responses rdf:resource="http://www.semanticweb.org/hzbup/ontologies/2021/2/survey"/>
+        <hasResponseRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.343</hasResponseRate>
+        <hasResponses rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1030</hasResponses>
+        <hasSurveys rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2999</hasSurveys>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
